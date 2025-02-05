@@ -261,7 +261,7 @@ submitButton.addEventListener('click', async () => {
     console.log('Student Name:', studentName);
 
     if (!studentName) {
-        alert('Please enter your name.');
+        alert('Please enter your name.(아래 칸에 이름을 영어로 입력하세요.)');
         return;
     }
 
@@ -294,10 +294,10 @@ submitButton.addEventListener('click', async () => {
             }
         } catch (error) {
             console.error('Error during submission:', error);
-            alert('An error occurred while submitting homework. Please try again.');
+            alert('An error occurred while submitting homework. Please try again.(제출 중에 오류가 생겼어요. 번거롭지만, 다시 시도해주세요.');
         }
     } else {
-        alert('No recording found. Please record before submitting.');
+        alert('No recording found. Please record before submitting.(녹음한 후에 제출 버튼을 누르세요.)');
     }
 });
 
